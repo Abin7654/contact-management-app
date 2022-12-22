@@ -1,0 +1,40 @@
+                 
+                 Contact Management App 
+
+
+            1. Create a angular project 
+            2. Installing Bootstrap and font-awesome  (npm i bootstrap @fortawesome/fontawesome-free)
+            3. Paste cdn link of font-awesome in index.html
+            4. Configure the bootstrap and font-awesome in angular.json 
+            5. Configure google fonts in style.css / index.html
+            6. check all working
+            7. create components needed to display in webpage 
+                 -conatctManager : view all Contact
+                 -addContact  : add a new Contact
+                 -updateContact : to edit the existing Contact
+                 -viewContact : to view a particular Contact
+                 -pageNotFound : to display page Not Found 
+                 -navbar : place its selector inside root component html page 
+
+           8. set up the path for each component in order to view it in browser 
+               -set up the path for each component in app-routing.module.ts  , routes 
+               -in app.component.html add router-outlet selector for displaying different web page 
+
+
+          9. set up the server api -
+                 -create server folder inside the project 
+                 -cretae db.json file 
+                 -open cmd from server folder 
+                      - create package.json file - command : npm init 
+                      - install json-server inside server folder
+                      - update package.json file , script as  
+                        "start": "json-server --watch db.json --port 3000"
+                      - to run server use command: npm start
+         10. Create Model for contacts and group 
+                 -Create model folder in src folder 
+                 -Create myContact.ts file inside that folder
+
+         11.  Create an angular service for making api call
+         12.  to get http methods  - get,post,put,patch,delete
+                  -Import HttpClientModule in app.module.ts 
+                  -Dependency Inject in api service 
